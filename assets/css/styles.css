@@ -47,9 +47,11 @@ a {
     cursor: pointer;
 }
 
-button {
+button,
+a {
     font-family: inherit;
     font-size: inherit;
+    color: inherit;
 }
 
 /* Header */
@@ -156,4 +158,73 @@ button {
 .header-action__signup {
     --height: 44px;
     min-width: 104px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+    display: flex;
+}
+
+.hero__content {
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -1.4px;
+    margin-top: 60px;
+}
+
+.hero__desc {
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+    margin-top: 22px;
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__phone {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    margin-left: 38px;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+}
+
+.hero__img + .hero__img {
+    width: 210px;
+    height: 410px;
+    margin-left: -6px;
 }
