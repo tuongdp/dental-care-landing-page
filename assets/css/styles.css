@@ -418,3 +418,86 @@ a {
 .feature__cta {
     margin-top: 38px;
 }
+
+/* Member */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    background: #eaf6ff;
+    padding-top: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__thumb {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: 290px;
+}
+
+.member-item__name {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
+    margin-top: 12px;
+}
+
+.member-item__title {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85714; /* 185.714% */
+}
+
+.member__control {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.member__control-btn + .member__control-btn {
+    transform: rotate(180deg);
+}
+
+.member__control-btn:hover {
+    border-color: #2e80ce;
+    color: #fff;
+    background: #2e80ce;
+    cursor: pointer;
+}
